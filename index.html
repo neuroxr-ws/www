@@ -1,27 +1,354 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroXR</title>
+    <title>2nd NeuroXR Workshop</title>
+
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 1000;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 15px 0;
+        }
+
+        nav ul {
             display: flex;
             justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            gap: 35px;
+            list-style: none;
+            flex-wrap: wrap;
         }
-        h1 {
-            font-size: 4rem;
-            color: #333;
+
+        nav a {
+            text-decoration: none;
+            color: #003366;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #0066cc;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: #f7f9fc;
+        }
+
+        .logo {
+            max-width: 220px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: #555;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        section h2 {
+            color: #003366;
+            margin-bottom: 25px;
+            font-size: 2rem;
+            border-bottom: 3px solid #e5e5e5;
+            padding-bottom: 10px;
+        }
+
+        .about p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        .organizer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+        }
+
+        .organizer-card {
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .organizer-card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .organizer-card h3 {
+            margin-bottom: 8px;
+            color: #003366;
+        }
+
+        .organizer-card a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .placeholder-box {
+            background: #f7f9fc;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
+
 <body>
-    <img alt="NeuroXR Logo" src="neuroxr_logo.png"/>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cfp">Call for Papers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#pc">PC Members</a></li>
+        <li><a href="#venue">Venue</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+
+    <!-- Replace neuroxr_logo.png with your logo filename if needed -->
+    <img src="neuroxr_logo.png" alt="NeuroXR Logo" class="logo">
+
+    <h1>2nd NeuroXR</h1>
+
+    <h2>
+        Neurophysiological Signals, Affective Computing and Cognition in Extended Reality
+    </h2>
+
+    <p>
+        Workshop at ISMAR 2026
+    </p>
+
+</section>
+
+<section id="about">
+    <div class="container">
+
+        <h2>About</h2>
+
+        <div class="about">
+
+            <p>
+                NeuroXR: Neurophysiological Signals, Affective Computing, and Cognition
+                in Extended Reality explores the intersection of XR,
+                neurotechnology, affective computing, cognitive science,
+                neuroengineering, and human-computer interaction.
+            </p>
+
+            <p>
+                The workshop focuses on how immersive systems can sense,
+                interpret, and respond to users’ cognitive, affective,
+                perceptual, behavioral, and neurophysiological states.
+            </p>
+
+            <p>
+                Key themes include neurophysiological and behavioral sensing
+                in XR, real-time user-state inference, closed-loop and adaptive
+                XR systems, neurofeedback and biofeedback, sensory augmentation
+                and neuroprostheses, and the ethical challenges raised by
+                sensitive neurophysiological and behavioral data.
+            </p>
+
+            <p>
+                This hybrid workshop invites researchers and practitioners
+                to present current research through paper presentations,
+                discussion sessions, a keynote, expert panels, remote and
+                in-person networking, and potential industry demonstrations.
+            </p>
+
+            <p>
+                The workshop will provide a forum for discussing emerging
+                methods, applications, and open challenges in NeuroXR,
+                while fostering collaboration across XR, neuroscience,
+                affective computing, rehabilitation, assistive technology,
+                and industry communities.
+            </p>
+
+            <p>
+                Accepted papers are planned for inclusion in the ISMAR 2026
+                adjunct proceedings, subject to the conference's workshop
+                publication policy.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="organizers">
+    <div class="container">
+
+        <h2>Organizers</h2>
+
+        <div class="organizer-grid">
+
+            <div class="organizer-card">
+                <img src="images/beyeler.jpg" alt="Michael Beyeler">
+                <h3>Dr. Michael Beyeler</h3>
+                <p>University of California, Santa Barbara</p>
+                <p>
+                    <a href="https://cs.ucsb.edu/people/faculty/michael-beyeler" target="_blank">
+                        Personal Website
+                    </a>
+                </p>
+            </div>
+
+            <div class="organizer-card">
+                <img src="images/botev.jpg" alt="Jean Botev">
+                <h3>Dr. Jean Botev</h3>
+                <p>University of Luxembourg</p>
+                <p>
+                    <a href="https://research.botev.net/" target="_blank">
+                        Personal Website
+                    </a>
+                </p>
+            </div>
+
+            <div class="organizer-card">
+                <img src="images/akash.jpg" alt="Akash K Rao">
+                <h3>Dr. Akash K Rao</h3>
+                <p>Manipal Academy of Higher Education</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/akash-k-rao-25766125b/" target="_blank">
+                        Personal Website
+                    </a>
+                </p>
+            </div>
+
+            <div class="organizer-card">
+                <img src="images/rahul.jpg" alt="Rahul Kumar Ray">
+                <h3>Dr. Rahul Kumar Ray</h3>
+                <p>FLAME University</p>
+                <p>
+                    <a href="https://www.flame.edu.in/faculty/rahul-kumar-ray" target="_blank">
+                        Personal Website
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="cfp">
+    <div class="container">
+        <h2>Call for Papers</h2>
+
+        <div class="placeholder-box">
+            Call for Papers information will be announced soon.
+        </div>
+    </div>
+</section>
+
+<section id="schedule">
+    <div class="container">
+        <h2>Schedule</h2>
+
+        <div class="placeholder-box">
+            Workshop schedule will be announced soon.
+        </div>
+    </div>
+</section>
+
+<section id="pc">
+    <div class="container">
+        <h2>Program Committee Members</h2>
+
+        <div class="placeholder-box">
+            Program Committee members will be announced soon.
+        </div>
+    </div>
+</section>
+
+<section id="venue">
+    <div class="container">
+        <h2>Venue</h2>
+
+        <div class="placeholder-box">
+            Venue details will be announced soon.
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 NeuroXR Workshop
+</footer>
+
 </body>
 </html>
+```
