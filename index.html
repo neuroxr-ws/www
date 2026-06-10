@@ -161,6 +161,43 @@
                 font-size: 1.1rem;
             }
         }
+   .dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 180px;
+    list-style: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 8px 0;
+    z-index: 2000;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #003366;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #f7f9fc;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
     </style>
 </head>
 
@@ -175,6 +212,20 @@
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#pc">PC Members</a></li>
         <li><a href="#venue">Venue</a></li>
+
+<li class="dropdown">
+    <a href="#">Previous Editions ▾</a>
+
+    <ul class="dropdown-menu">
+        <li>
+            <a href="https://sites.google.com/view/neuroxrismar2025/home"
+               target="_blank">
+                NeuroXR 2025
+            </a>
+        </li>
+    </ul>
+</li>
+
     </ul>
 </nav>
 
